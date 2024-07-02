@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leah\\Desktop\\app\\payrollCalculatorApi\\payrollCalculatorApi.csproj",
+      "projectUniqueName": "C:\\Users\\Leah\\Desktop\\Project\\payroll\\payrollTask\\app\\payrollCalculatorApi\\payrollCalculatorApi.csproj",
       "projectName": "payrollCalculatorApi",
-      "projectPath": "C:\\Users\\Leah\\Desktop\\app\\payrollCalculatorApi\\payrollCalculatorApi.csproj",
+      "projectPath": "C:\\Users\\Leah\\Desktop\\Project\\payroll\\payrollTask\\app\\payrollCalculatorApi\\payrollCalculatorApi.csproj",
       "packagesPath": "C:\\Users\\Leah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leah\\Desktop\\app\\payrollCalculatorApi\\obj\\",
+      "outputPath": "C:\\Users\\Leah\\Desktop\\Project\\payroll\\payrollTask\\app\\payrollCalculatorApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leah\\AppData\\Roaming\\NuGet\\NuGet.Config",
