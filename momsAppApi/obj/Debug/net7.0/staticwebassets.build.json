@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Zq5L9yDwa1D4xK+BOQouldc6MhFxTc3f4/u7RvNsmZQ=",
+  "Source": "momsAppServer",
+  "BasePath": "_content/momsAppServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
