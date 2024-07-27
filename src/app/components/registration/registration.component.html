@@ -1,0 +1,57 @@
+<form [formGroup]="registrationForm" (ngSubmit)="completeRegistration()">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input id="firstName" formControlName="firstName">
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" formControlName="lastName">
+  </div>
+  <div>
+    <label for="childNumber">Child Number:</label>
+    <input id="childNumber" formControlName="childNumber">
+  </div>
+  <div>
+    <label for="childGender">Child Gender:</label>
+    <input id="childGender" formControlName="childGender">
+  </div>
+  <div>
+    <label for="childDateOfBirth">Child Date of Birth:</label>
+    <input id="childDateOfBirth" type="date" formControlName="childDateOfBirth">
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input id="phone" formControlName="phone">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input id="password" type="password" formControlName="password">
+  </div>
+  <div>
+    <label for="street">Street:</label>
+    <input id="street" formControlName="street">
+  </div>
+  <div>
+    <label for="houseNumber">House Number:</label>
+    <input id="houseNumber" formControlName="houseNumber">
+  </div>
+  <div>
+    <label for="cityId">City:</label>
+    <input id="cityId" formControlName="cityId">
+  </div>
+  <div>
+    <label for="districtId">District:</label>
+    <select id="districtId" formControlName="districtId">
+      <option *ngFor="let district of districts" [value]="district.districtId">
+        {{ district.Name }}
+      </option>
+    </select>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+

@@ -1,20 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <!-- <form (ngSubmit)="updateProfile()">
+    <input type="text" [(ngModel)]="updates.firstName" name="firstName" placeholder="First Name" />
+    <input type="text" [(ngModel)]="updates.lastName" name="lastName" placeholder="Last Name" />
+    <input type="email" [(ngModel)]="updates.email" name="email" placeholder="Email" />
+    <button type="submit">Update Profile</button>
+  </form> -->
+  <!-- <ion-button (click)="signInWithGoogle()">Sign In with Google</ion-button>
+  <ion-button (click)="loginWithFacebook()">Login with Facebook</ion-button>
+  <ion-button (click)="signOut()">Logout</ion-button>
+</ion-content> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<form (ngSubmit)="login()">
+  <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
+  <button type="submit">Login</button>
+</form>
+<!-- <button (click)="loginWithGoogle()">Login with Google</button>
+<button (click)="loginWithFacebook()">Login with Facebook</button> -->
+  <ion-button (click)="signInWithGoogle()">Sign In with Google</ion-button>
+  <ion-button (click)="loginWithFacebook()">Login with Facebook</ion-button>
