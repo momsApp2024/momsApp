@@ -1,17 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace momsAppServer.Dal
+namespace momsAppApi.Dal
 {
-        public class City
-        {
+    public class City
+    {
+            [Key]
+            public int CityId { get; set; }
+            public string Name { get; set; }
+            public int DistrictId { get; set; }
+            public virtual District District { get; set; }
+            public virtual ICollection<Address> Addresses { get; set; }
+        }
+    }
 
-        [Key]
-        public int CityId { get; set; }
-        public string Name { get; set; }
-        public int DistrictId { get; set; }
-        public virtual District District { get; set; }
-        public virtual ICollection<Address> Addresses { get; set; }
-    }
-    }
+
 

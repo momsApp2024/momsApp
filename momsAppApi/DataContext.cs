@@ -1,6 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using momsAppServer.Dal;
-namespace momsAppServer
+using momsAppApi.Dal;
+using System.Collections.Generic;
+
+using System.Reflection.Emit;
+
+namespace momsAppApi
 {
     public class DataContext : DbContext
     {
@@ -65,3 +69,4 @@ namespace momsAppServer
         }
     }
 }
+

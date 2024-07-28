@@ -1,4 +1,4 @@
-namespace momsAppServer
+namespace momsAppApi
 {
     public class WeatherForecast
     {

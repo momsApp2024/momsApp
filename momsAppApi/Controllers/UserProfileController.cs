@@ -1,62 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using momsAppApi.Dal;
 using Microsoft.EntityFrameworkCore;
-using momsAppServer.Dal;
-using momsAppServer.Models;
+using momsAppApi.Models;
 using BCrypt.Net;
 
-
-namespace momsAppServer.Controllers
+namespace momsAppApi.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UserProfileController : ControllerBase
+  
+        [ApiController]
+        [Route("api/[controller]")]
+        public class UserProfileController : ControllerBase
 
-    {
-        private readonly DataContext _context;
-
-        public UserProfileController(DataContext context)
         {
-            _context = context;
-        }
+            private readonly DataContext _context;
 
-        //        [HttpPatch("{id}")]
-        //        public async Task<IActionResult> UpdateProfile(int PersonalInformationId, [FromBody] Dictionary<string, object> updates)
-        //        {
-        //            var userProfile = await _context.PersonalInformations.FindAsync(PersonalInformationId);
-        //            if (userProfile == null)
-        //            {
-        //                return NotFound();
-        //            }
-
-        //            foreach (var update in updates)
-        //            {
-        //                var propertyInfo = typeof(PersonalInformation).GetProperty(update.Key, BindingFlags.Public | BindingFlags.Instance);
-        //                if (propertyInfo != null && propertyInfo.CanWrite)
-        //                {
-        //                    propertyInfo.SetValue(userProfile, Convert.ChangeType(update.Value, propertyInfo.PropertyType), null);
-        //                }
-        //            }
-
-        //            await _context.SaveChangesAsync();
-        //            return NoContent();
-        //        }
-        //[HttpPost("login")]
-        //public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
-        //{
-        //    var user = await _context.PersonalInformations
-        //        .FirstOrDefaultAsync(u => u.Email == loginRequest.Email);
-
-        //    if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.PasswordHash))
-        //    {
-        //        //return Unauthorized();
-        //        return BadRequest("Invalid credentials"); // Or any other appropriate status code
-
-        //    }
-
-        //    var isProfileComplete = user.IsProfileComplete;
-        //    return Ok(new { RequiresRegistration = !isProfileComplete });
-        //}
-
+            public UserProfileController(DataContext context)
+            {
+                _context = context;
+            }
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
@@ -147,3 +108,4 @@ namespace momsAppServer.Controllers
         }
     }
 }
+        
