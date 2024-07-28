@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BkOPGixgKWxajhsaDaflxVPkuUPONRRwPKJb2+VcmfM=",
+  "Source": "momsAppApi",
+  "BasePath": "_content/momsAppApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

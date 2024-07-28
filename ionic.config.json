@@ -1,0 +1,7 @@
+{
+  "name": "momsApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
